@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class InputOutputExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Ввод строки
+        System.out.print("Введите строку: ");
+        String inputString = scanner.nextLine();
+        System.out.println("Вы ввели: " + inputString);
+
+        // Ввод целого числа
+        System.out.print("Введите целое число: ");
+        int inputInt = scanner.nextInt();
+        System.out.println("Вы ввели: " + inputInt);
+
+        // Ввод числа с плавающей запятой
+        System.out.print("Введите число с плавающей запятой: ");
+        double inputDouble = scanner.nextDouble();
+        System.out.println("Вы ввели: " + inputDouble);
+
+        scanner.close();
+    }
+}
